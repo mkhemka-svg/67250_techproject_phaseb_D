@@ -50,12 +50,25 @@ footer {
 }
 
 th, td {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  width: fit-content;
   border: 2px solid #f8f5ff
 }
 
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: fit-content;
+  background-color: #ffcfdf;
+  color: #a47dab;
+}
+
+tr {
+  background-color: #9fa6e5;
+}
 tr:nth-child(even) {
   background-color: #f8f5ff;
+}
+
+form * {
+  margin: auto;
+  text-align: center;
 }
