@@ -53,7 +53,7 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   width: fit-content;
-  border: 2px 
+  border: 2px solid #ffcfdf
 }
 
 tr:nth-child(even) {
