@@ -23,3 +23,7 @@ nav a {
   border: 1px solid transparent;
   border-radius: 12px;
 }
+
+nav a:hover {
+  border-color: #ffcfdf;
+  }
