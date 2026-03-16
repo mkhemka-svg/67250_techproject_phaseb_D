@@ -43,7 +43,7 @@ nav a:hover {
 }
 
 footer {
-  border-top: 1px solid rgba(248,245,255,.12);
+  border-top: 1px solid rgba(248,245,255,.25);
   padding: 18px 16px;
   text-align: center;
   color: rgba(248,245,255,.72);
