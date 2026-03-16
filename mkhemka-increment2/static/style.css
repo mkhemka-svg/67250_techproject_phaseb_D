@@ -9,3 +9,8 @@
   background: #9fa6e5;
   color: #f8f5ff;
 }
+
+#logo {
+  width: 18%;
+  display: block;
+}
