@@ -32,3 +32,12 @@ nav a:hover {
   color:#ffcfdf;    
 }
 
+.cta {
+  background-color: #f8f5ff;
+  color: #a47dab;
+  text-decoration: none;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+}
