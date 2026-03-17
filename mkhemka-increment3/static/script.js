@@ -10,4 +10,8 @@ var C = A + B;
 
 console.log(C);
 
+function sumnPrint(x1,x2) {
+var result = x1 + x2;
+console.log(result);
+}
 
