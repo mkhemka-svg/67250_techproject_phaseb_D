@@ -15,3 +15,6 @@ var result = x1 + x2;
 console.log(result);
 }
 
+sumnPrint(x, y);
+sumnPrint(A, B);
+
