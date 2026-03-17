@@ -18,3 +18,11 @@ console.log(result);
 sumnPrint(x, y);
 sumnPrint(A, B);
 
+if (C.length > z) {
+    console.log(C)
+    if (C.length < z) {
+        console.log(z)
+    }
+} else {
+    console.log("good job!")
+}
