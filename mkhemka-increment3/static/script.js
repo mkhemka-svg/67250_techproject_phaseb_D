@@ -19,12 +19,12 @@ var result = x1 + x2;
 //sumnPrint(A, B);
 
 if (C.length > z) {
-    console.log(C)
+    //console.log(C)
     if (C.length < z) {
-        console.log(z)
+        //console.log(z)
     }
 } else {
-    console.log("good job!")
+    //console.log("good job!")
 }
 
 var L1 = ["Watermelon","Pineapple","Pear","Banana"];
