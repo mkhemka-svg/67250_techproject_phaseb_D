@@ -40,3 +40,6 @@ function findTheBanana(array) {
     }
 
 }
+
+findTheBanana(L1)
+findTheBanana(L2)
