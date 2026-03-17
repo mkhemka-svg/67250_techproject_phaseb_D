@@ -41,8 +41,8 @@ function findTheBanana(array) {
 
 }
 
-findTheBanana(L1);
-findTheBanana(L2);
+//findTheBanana(L1);
+//findTheBanana(L2);
 
 function findTheBanana2(array) {
     array.forEach(checkifBanana)
@@ -54,5 +54,5 @@ function findTheBanana2(array) {
     }
 }
 
-findTheBanana2(L1);
-findTheBanana2(L2);
+//findTheBanana2(L1);
+//findTheBanana2(L2);
