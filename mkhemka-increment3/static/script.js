@@ -26,3 +26,17 @@ if (C.length > z) {
 } else {
     console.log("good job!")
 }
+
+var L1 = ["Watermelon","Pineapple","Pear","Banana"];
+var L2 = ["Apple","Banana","Kiwi","Orange"];
+
+function findTheBanana(array) {
+    var i
+    for (i=0; i<array.length; i++) {
+
+        if (array[i] == "Banana"){
+            alert("Banana found!");
+        }
+    }
+
+}
