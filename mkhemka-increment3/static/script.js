@@ -28,7 +28,7 @@ if (C.length > z) {
 }
 
 var L1 = ["Watermelon","Pineapple","Pear","Banana"];
-var L2 = ["Apple","Kiwi","Orange"];
+var L2 = ["Apple","Banana","Kiwi","Orange"];
 
 function findTheBanana(array) {
     var i
