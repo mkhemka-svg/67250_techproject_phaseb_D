@@ -2,17 +2,17 @@ var x = 5;
 var y = 7;
 var z = x + y;
 
-console.log(z);
+//console.log(z);
 
 var A = "Hello ";
 var B = "world!";
 var C = A + B;
 
-console.log(C);
+//console.log(C);
 
 function sumnPrint(x1,x2) {
 var result = x1 + x2;
-console.log(result);
+//console.log(result);
 }
 
 //sumnPrint(x, y);
