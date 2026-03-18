@@ -82,3 +82,14 @@ function greeting(h) {
 }
 
 greeting(hour);
+
+
+function addYear() {
+    var year = document.getElementsById("copyYear");
+
+    if (year !== null) {
+        var currentYear = new Date().getFullYear();
+        year.innerHTML = "©" + currentYear + "MonoMuse. All rights reserved."
+    }
+
+}
