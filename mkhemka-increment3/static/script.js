@@ -85,7 +85,7 @@ greeting(hour);
 
 
 function addYear() {
-    var year = document.getElementsById("copyYear");
+    var year = document.getElementById("copyYear");
 
     if (year !== null) {
         var currentYear = new Date().getFullYear();
