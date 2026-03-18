@@ -56,3 +56,26 @@ function findTheBanana2(array) {
 
 //findTheBanana2(L1);
 //findTheBanana2(L2);
+
+
+var now = new Date();
+var hour = now.getHours();
+
+function greeting(h) {
+
+    var greet = document.getElementById("greeting");
+
+    if (h < 5 || h >= 20) {
+        greet.innerHTML = "Good night! Welcome to MonoMuse.";
+
+    } else if (h < 12) {
+        greet.innerHTML = "Good morning! Welcome to MonoMuse.";
+
+    } else if (h < 18) {
+        greet.innerHTML = "Good afternoon! Welcome to MonoMuse.";
+
+    } else {
+        greet.innerHTML = "Good evening! Welcome to MonoMuse.";
+    }
+
+}
