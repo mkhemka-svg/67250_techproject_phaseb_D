@@ -65,19 +65,20 @@ function greeting(h) {
 
     var greet = document.getElementById("greeting");
 
-    if (h < 5 || h >= 20) {
-        greet.innerHTML = "Good night! Welcome to MonoMuse.";
+    if (greet !== null) {
+        if (h < 5 || h >= 20) {
+            greet.innerHTML = "Good night! Welcome to MonoMuse.";
 
-    } else if (h < 12) {
-        greet.innerHTML = "Good morning! Welcome to MonoMuse.";
+        } else if (h < 12) {
+            greet.innerHTML = "Good morning! Welcome to MonoMuse.";
 
-    } else if (h < 18) {
-        greet.innerHTML = "Good afternoon! Welcome to MonoMuse.";
+        } else if (h < 18) {
+            greet.innerHTML = "Good afternoon! Welcome to MonoMuse.";
 
-    } else {
-        greet.innerHTML = "Good evening! Welcome to MonoMuse.";
+        } else {
+            greet.innerHTML = "Good evening! Welcome to MonoMuse.";
+        }
     }
-
 }
 
 greeting(hour);
