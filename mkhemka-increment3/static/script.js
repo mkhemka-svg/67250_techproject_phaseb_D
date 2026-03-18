@@ -89,7 +89,7 @@ function addYear() {
 
     if (year !== null) {
         var currentYear = new Date().getFullYear();
-        year.innerHTML = "© " + currentYear  + "MonoMuse. All rights reserved."
+        year.innerHTML = "© " + currentYear + " MonoMuse. All rights reserved."
     }
 
 }
