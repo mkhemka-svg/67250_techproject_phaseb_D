@@ -86,10 +86,7 @@ greeting(hour);
 
 function addYear() {
     var year = document.getElementById("copyYear");
-
-    if (year !== null) {
-        var currentYear = new Date().getFullYear();
-        year.innerHTML = "© " + currentYear + " MonoMuse. All rights reserved."
-    }
+    var currentYear = new Date().getFullYear();
+    year.innerHTML = "© " + currentYear + " MonoMuse. All rights reserved."
 
 }
