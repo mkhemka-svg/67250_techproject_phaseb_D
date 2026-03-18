@@ -79,3 +79,5 @@ function greeting(h) {
     }
 
 }
+
+greeting(hour);
