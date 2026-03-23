@@ -84,9 +84,4 @@ function greeting(h) {
 greeting(hour);
 
 
-function addYear() {
-    var year = document.getElementById("copyYear");
-    var currentYear = new Date().getFullYear();
-    year.innerHTML = "© " + currentYear + " MonoMuse. All rights reserved."
-
-}
+document.getElementById("footer_copy").innerHTML = "Monomuse&copy " + year;
