@@ -89,4 +89,3 @@ function addYear() {
     year.innerHTML = "© " + currentYear + " MonoMuse. All rights reserved."
 
 }
-
