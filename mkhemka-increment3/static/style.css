@@ -59,7 +59,7 @@ th {
   width: fit-content;
 }
 
-td:nth-child(even) {
+tr:nth-child(even) {
   background-color: #f8f5ff;
 }
 
