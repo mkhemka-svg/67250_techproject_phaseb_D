@@ -59,12 +59,8 @@ th {
   width: fit-content;
 }
 
-tr {
-  background-color: #9fa6e5;
-}
-
 tr:nth-child(even) {
-  background-color: #f8f5ff;
+  background-color: #f8f5ff !important;
 }
 
 form * {
