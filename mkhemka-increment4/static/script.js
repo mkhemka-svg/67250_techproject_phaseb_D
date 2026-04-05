@@ -67,16 +67,16 @@ function greeting(h) {
 
     if (greet !== null) {
         if (h < 5 || h >= 20) {
-            greet.innerHTML = "Good night! Welcome to MonoMuse.";
+            greet.innerHTML = "Good night! Welcome to American Museum of Natural History.";
 
         } else if (h < 12) {
-            greet.innerHTML = "Good morning! Welcome to MonoMuse.";
+            greet.innerHTML = "Good morning! Welcome to American Museum of Natural History.";
 
         } else if (h < 18) {
-            greet.innerHTML = "Good afternoon! Welcome to MonoMuse.";
+            greet.innerHTML = "Good afternoon! Welcome to American Museum of Natural History.";
 
         } else {
-            greet.innerHTML = "Good evening! Welcome to MonoMuse.";
+            greet.innerHTML = "Good evening! Welcome to American Museum of Natural History.";
         }
     }
 }
@@ -86,6 +86,6 @@ greeting(hour);
 function addYear() {
     var year = document.getElementById("copyYear");
     var currentYear = new Date().getFullYear();
-    year.innerHTML = "© " + currentYear + " MonoMuse. All rights reserved."
+    year.innerHTML = "© " + currentYear + " American Museum of Natural History. All rights reserved."
 
 }
