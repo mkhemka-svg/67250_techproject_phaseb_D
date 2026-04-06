@@ -195,11 +195,8 @@ function ActiveNav() {
 ActiveNav();
 
 function ResponsiveNavBar() {
-    console.log("in ResponsiveNavBar");
     var nav = document.getElementById('navbar');
-    console.log(nav);
     if (nav.className === "nav_bar") {
-        console.log("nav.className === 'nav_bar'");
         nav.className += " responsive";
     } else {
         nav.className = "nav_bar";

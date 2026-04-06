@@ -222,6 +222,7 @@ iframe {
   height: 315px;
   border-radius: 12px;
   margin-top: 16px;
+  border: none;
 }
 
 #map {
