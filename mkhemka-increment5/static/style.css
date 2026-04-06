@@ -125,10 +125,14 @@ nav li a:hover {
   display: none;
 }
 
+.main_figure {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 img[src*="entranceimage"] {
-  width: 40%;
-  display: block;
-  margin: 12px 0;
+  width: 90%;
   border-radius: 12px;
 }
 
