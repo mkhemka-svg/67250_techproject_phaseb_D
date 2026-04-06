@@ -137,10 +137,10 @@ img[src*="entranceimage"] {
 }
 
 footer {
-  border-top: 1px solid rgba(238,232,220,.50);
+  border-top: 1px solid #eee8dc;
   padding: 18px 16px;
   text-align: center;
-  color: rgba(238,232,220,.72);
+  color: #eee8dc;
 }
 
 th, td {
