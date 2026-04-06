@@ -230,8 +230,8 @@ iframe {
 }
 
 #map * {
-  background: white;
-  color: #2d3b2d;
+  background: unset;
+  color: unset;
 }
 
 @media only screen and (max-width: 650px) {
