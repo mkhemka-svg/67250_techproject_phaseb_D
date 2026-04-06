@@ -100,7 +100,10 @@ function selectDate(day) {
 
 function calculatePrice() {
     var qty = parseInt(document.getElementById("quantity").value) || 1;
-    document.getElementById("totalPrice").textContent = qty * 18;
+    var type = document.getElementById("ticketType").value;
+    var prices = { "Adult": 18, "Teen": 12, "Senior": 14 };
+    var rate = prices[type] || 18;
+    document.getElementById("totalPrice").textContent = qty * rate;
 }
 
 function placeOrder() {
@@ -128,7 +131,8 @@ function placeOrder() {
     }
 
     errorDiv.innerHTML = "";
-    var total = qty * 18;
+    var prices = { "Adult": 18, "Teen": 12, "Senior": 14 };
+    var total = qty * (prices[ticketType] || 18);
     var mailing = document.getElementById("mailingList").checked ? "Yes" : "No";
 
     alert(
