@@ -229,6 +229,11 @@ iframe {
   width: 50vw;
 }
 
+#map * {
+  background: unset;
+  color: unset;
+}
+
 @media only screen and (max-width: 650px) {
   .container {
     display: grid;
