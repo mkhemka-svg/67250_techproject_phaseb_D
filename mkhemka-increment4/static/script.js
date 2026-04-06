@@ -84,13 +84,89 @@ function greeting(h) {
 greeting(hour);
 
 function selectDate(day) {
-    var date = "May " + day + ", 2025";
-    showForm(date);
+    var buy_form = document.getElementById("ticket-form");
+    buy_form.style.display = "block";
+
+    var dateInput = document.getElementById("visitDate");
+    var today = new Date();
+    var year = today.getFullYear();
+    var month = today.getMonth() + 1;
+
+    month = String(month).padStart(2, '0');
+    day = String(day).padStart(2, '0');
+
+    dateInput.value = year + "-" + month + "-" + day;
 }
 
-function showForm(date) {
-    document.getElementById("purchaseForm").style.display = "block";
-    document.getElementById("selectedDate").value = date;
+function checkout() {
+    alert("Redirecting to ticket purchase...");
+    location.reload();
+}
+
+function updateScheduleToCurrentMonth() {
+    const table = document.getElementById("scheduleTable");
+    const today = new Date();
+
+    const year = today.getFullYear();
+    const month = today.getMonth();
+
+    const monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const currentDay = today.getDate();
+
+    let html = `
+        <tr>
+            <th colspan="7">${monthNames[month]} ${year}</th>
+        </tr>
+        <tr>
+            <th colspan="7">Select a date</th>
+        </tr>
+        <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+    `;
+
+    let day = 1;
+
+    for (let week = 0; week < 6; week++) {
+        html += "<tr>";
+
+        for (let i = 0; i < 7; i++) {
+            if ((week === 0 && i < firstDay) || day > daysInMonth) {
+                html += "<td></td>";
+            } else {
+                if (day < currentDay) {
+                    html += `<td><span class="date passed">${day}</span></td>`;
+                } else {
+                    html += `<td><span class="date" onclick="selectDate(${day})">${day}</span></td>`;
+                }
+                day++;
+            }
+        }
+
+        html += "</tr>";
+
+        if (day > daysInMonth) {
+            break;
+        }
+    }
+
+    table.innerHTML = html;
+}
+
+if (window.location.href.includes("buytickets.html")) {
+    updateScheduleToCurrentMonth();
 }
 
 // When the "Read Less" button is clicked

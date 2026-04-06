@@ -7,6 +7,15 @@
     'footer footer';
 }
 
+.container.tickets {
+  grid-template-areas:
+    'header header header'
+    'nav_bar nav_bar nav_bar'
+    'main aside section'
+    'footer footer footer';
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
 .header {
    grid-area: header;
 }
@@ -20,6 +29,12 @@
 }
 .main_img {
    grid-area: main-img;
+}
+.aside {
+   grid-area: aside;
+}
+.section {
+   grid-area: section;
 }
 .footer {
    grid-area: footer;
@@ -154,9 +169,22 @@ tr:nth-child(even) td{
   color: #1a2a1a;
 }
 
-#purchaseForm {
+#ticket-form {
   display: none;
   margin-top: 24px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.passed {
+  opacity: 0.35;
+  cursor: default;
+  pointer-events: none;
 }
 
 .buy-btn {
