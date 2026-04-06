@@ -110,8 +110,6 @@ function placeOrder() {
     var ticketType = document.getElementById("ticketType").value;
     var qty = parseInt(document.getElementById("quantity").value);
     var email = document.getElementById("email").value.trim();
-    var zip = document.getElementById("zipcode").value.trim();
-
     if (!date) errors.push("Visit date is required.");
     if (!ticketType) errors.push("Ticket type is required.");
     if (!qty || qty < 1 || qty > 10) errors.push("Quantity must be between 1 and 10.");
@@ -121,10 +119,6 @@ function placeOrder() {
         errors.push("Email is required.");
     } else if (!emailRegex.test(email)) {
         errors.push("Please enter a valid email address.");
-    }
-
-    if (zip && !/^\d{5}$/.test(zip)) {
-        errors.push("Zip code must be exactly 5 digits.");
     }
 
     var errorDiv = document.getElementById("form-errors");
