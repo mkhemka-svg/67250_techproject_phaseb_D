@@ -32,139 +32,98 @@
             <a href="checkout.html">Checkout</a>
         </nav>
         <main class="main">
-            <table class="schedule" id="scheduleTable">
+
+            <h2>Ticket Prices</h2>
+            <table>
                 <tr>
-                    <th colspan="7" id="schedule_title">May 2025</th>
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
                 </tr>
                 <tr>
-                    <th colspan="7">Select a date</th>
-                </tr>
-                <tr>
-                    <th>Sun</th>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><span class="date" onclick="selectDate(1)">1</span></td>
-                    <td><span class="date" onclick="selectDate(2)">2</span></td>
-                    <td><span class="date" onclick="selectDate(3)">3</span></td>
-                </tr>
-                <tr>
-                    <td><span class="date" onclick="selectDate(4)">4</span></td>
-                    <td><span class="date" onclick="selectDate(5)">5</span></td>
-                    <td><span class="date" onclick="selectDate(6)">6</span></td>
-                    <td><span class="date" onclick="selectDate(7)">7</span></td>
-                    <td><span class="date" onclick="selectDate(8)">8</span></td>
-                    <td><span class="date" onclick="selectDate(9)">9</span></td>
-                    <td><span class="date" onclick="selectDate(10)">10</span></td>
-                </tr>
-                <tr>
-                    <td><span class="date" onclick="selectDate(11)">11</span></td>
-                    <td><span class="date" onclick="selectDate(12)">12</span></td>
-                    <td><span class="date" onclick="selectDate(13)">13</span></td>
-                    <td><span class="date" onclick="selectDate(14)">14</span></td>
-                    <td><span class="date" onclick="selectDate(15)">15</span></td>
-                    <td><span class="date" onclick="selectDate(16)">16</span></td>
-                    <td><span class="date" onclick="selectDate(17)">17</span></td>
-                </tr>
-                <tr>
-                    <td><span class="date" onclick="selectDate(18)">18</span></td>
-                    <td><span class="date" onclick="selectDate(19)">19</span></td>
-                    <td><span class="date" onclick="selectDate(20)">20</span></td>
-                    <td><span class="date" onclick="selectDate(21)">21</span></td>
-                    <td><span class="date" onclick="selectDate(22)">22</span></td>
-                    <td><span class="date" onclick="selectDate(23)">23</span></td>
-                    <td><span class="date" onclick="selectDate(24)">24</span></td>
-                </tr>
-                <tr>
-                    <td><span class="date" onclick="selectDate(25)">25</span></td>
-                    <td><span class="date" onclick="selectDate(26)">26</span></td>
-                    <td><span class="date" onclick="selectDate(27)">27</span></td>
-                    <td><span class="date" onclick="selectDate(28)">28</span></td>
-                    <td><span class="date" onclick="selectDate(29)">29</span></td>
-                    <td><span class="date" onclick="selectDate(30)">30</span></td>
-                    <td><span class="date" onclick="selectDate(31)">31</span></td>
-                </tr>
-            </table>
-        </main>
-        <aside class="aside">
-            <table class="prices">
-                <tr>
-                    <th colspan="3">Ticket Prices</th>
-                </tr>
-                <tr>
-                    <th>Age Group</th>
-                    <th>Members</th>
-                    <th>Non-Members</th>
-                </tr>
-                <tr>
-                    <td>Adults</td>
-                    <td>$12</td>
+                    <td>Adult</td>
+                    <td>General admission for ages 18 and over. Under 18 free of charge.</td>
                     <td>$18</td>
                 </tr>
                 <tr>
-                    <td>Teens</td>
-                    <td>$8</td>
-                    <td>$12</td>
-                </tr>
-                <tr>
-                    <td>Under 3</td>
-                    <td>Free</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td>Senior</td>
+                    <td>Student</td>
+                    <td>Student ID required</td>
                     <td>$10</td>
-                    <td>$14</td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>Member ID required</td>
+                    <td>$15</td>
                 </tr>
             </table>
-        </aside>
-        <section class="section">
-            <form id="ticket-form">
-                <label for="visitDate">Visit Date</label>
-                <input type="date" id="visitDate" name="visitDate" required>
 
-                <div class="row">
-                    <h4>Select Ticket Quantities</h4>
-                </div>
-                <div class="row">
-                    <label>Adults</label>
-                    <input type="number" name="adults" min="0" max="10" value="0">
-                </div>
-                <div class="row">
-                    <label>Teens</label>
-                    <input type="number" name="teens" min="0" max="10" value="0">
-                </div>
-                <div class="row">
-                    <label>Seniors</label>
-                    <input type="number" name="seniors" min="0" max="10" value="0">
-                </div>
-                <div class="row">
-                    <h4>Membership Status</h4>
-                </div>
-                <div class="row">
-                    <label>
-                        <input type="radio" name="membership" value="member" required>
-                        Member
-                    </label>
-                    <label>
-                        <input type="radio" name="membership" value="non-member">
-                        Non-Member
-                    </label>
-                </div>
-                <div class="row">
-                    <button onclick="checkout()" id="Checkout" type="button">Checkout</button>
-                </div>
-            </form>
-        </section>
+            <h2>Available Dates — May 2025</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Day</th>
+                    <th>Hours</th>
+                    <th>Availability</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>May 3, 2025</td>
+                    <td>Saturday</td>
+                    <td>10:00 AM – 5:30 PM</td>
+                    <td>Available</td>
+                    <td><button type="button" class="buy-btn" onclick="showForm('May 3, 2025')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>May 10, 2025</td>
+                    <td>Saturday</td>
+                    <td>10:00 AM – 5:30 PM</td>
+                    <td>Available</td>
+                    <td><button type="button" class="buy-btn" onclick="showForm('May 10, 2025')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>May 17, 2025</td>
+                    <td>Saturday</td>
+                    <td>10:00 AM – 5:30 PM</td>
+                    <td>Available</td>
+                    <td><button type="button" class="buy-btn" onclick="showForm('May 17, 2025')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>May 24, 2025</td>
+                    <td>Saturday</td>
+                    <td>10:00 AM – 5:30 PM</td>
+                    <td>Available</td>
+                    <td><button type="button" class="buy-btn" onclick="showForm('May 24, 2025')">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>May 31, 2025</td>
+                    <td>Saturday</td>
+                    <td>10:00 AM – 5:30 PM</td>
+                    <td>Available</td>
+                    <td><button type="button" class="buy-btn" onclick="showForm('May 31, 2025')">Buy Now</button></td>
+                </tr>
+            </table>
+
+            <div id="purchaseForm">
+                <h2>Purchase Tickets</h2>
+                <form>
+                    <label for="buyName">Name: (required)</label><br>
+                    <input type="text" id="buyName" name="name" required><br><br>
+
+                    <label for="buyEmail">Email: (required)</label><br>
+                    <input type="email" id="buyEmail" name="email" required><br><br>
+
+                    <label for="buyQuantity">Number of Tickets: (required)</label><br>
+                    <input type="number" id="buyQuantity" name="quantity" min="1" required><br><br>
+
+                    <label for="selectedDate">Selected Date:</label><br>
+                    <input type="text" id="selectedDate" name="date" readonly><br><br>
+
+                    <input type="button" value="Submit" onclick="alert('Redirecting to payment system.')">
+                </form>
+            </div>
+
+        </main>
+        <figure class="main_figure"></figure>
         <footer class="footer">
             <p id="copyYear"></p>
         </footer>
