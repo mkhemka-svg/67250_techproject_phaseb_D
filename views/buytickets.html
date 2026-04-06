@@ -78,43 +78,47 @@
         </aside>
         <section class="section">
             <form id="ticket-form">
-                <label for="visitDate">Visit Date</label>
+                <label for="visitDate">Visit Date *</label>
                 <input type="date" id="visitDate" name="visitDate" required>
-                <div class="row">
-                    <h4>Select Ticket Quantities</h4>
+
+                <label for="ticketType">Ticket Type *</label>
+                <select id="ticketType" name="ticketType" required onchange="calculatePrice()">
+                    <option value="">-- Select --</option>
+                    <option value="General">General</option>
+                    <option value="Student">Student</option>
+                    <option value="Member">Member</option>
+                </select>
+
+                <label for="quantity">Quantity (1–10) *</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" oninput="calculatePrice()">
+
+                <div class="price-display">
+                    Total: $<span id="totalPrice">18</span>
                 </div>
-                <div class="row">
-                    <label>Adults</label>
-                    <input type="number" name="adults" min="0" max="10" value="0">
-                </div>
-                <div class="row">
-                    <label>Teens</label>
-                    <input type="number" name="teens" min="0" max="10" value="0">
-                </div>
-                <div class="row">
-                    <label>Seniors</label>
-                    <input type="number" name="seniors" min="0" max="10" value="0">
-                </div>
-                <div class="row">
-                    <h4>Membership Status</h4>
-                </div>
+
+                <label for="email">Email *</label>
+                <input type="text" id="email" name="email" placeholder="you@example.com">
+
+                <label for="zipcode">Zip Code (optional)</label>
+                <input type="text" id="zipcode" name="zipcode" placeholder="12345" maxlength="5">
+
                 <div class="row">
                     <label>
-                        <input type="radio" name="membership" value="member" required>
-                        Member
-                    </label>
-                    <label>
-                        <input type="radio" name="membership" value="non-member">
-                        Non-Member
+                        <input type="checkbox" id="mailingList" name="mailingList">
+                        Join our mailing list
                     </label>
                 </div>
+
+                <div id="form-errors"></div>
+
                 <div class="row">
-                    <button onclick="checkout()" id="Checkout" type="button">Checkout</button>
+                    <button onclick="placeOrder()" id="placeOrderBtn" type="button">Place Order</button>
                 </div>
             </form>
         </section>
         <footer class="footer">
             <p id="copyYear"></p>
+            <p class="contact-footer"><strong>Contact Us:</strong> 📞 (212) 769-5100 &nbsp;|&nbsp; ✉️ info@amnh.org &nbsp;|&nbsp; Central Park West at 79th St, New York, NY 10024</p>
         </footer>
     </div>
 </body>
