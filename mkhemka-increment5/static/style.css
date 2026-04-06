@@ -143,6 +143,12 @@ footer {
   color: #eee8dc;
 }
 
+.contact-footer {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
 th, td {
   border: 2px solid #eee8dc
 }
