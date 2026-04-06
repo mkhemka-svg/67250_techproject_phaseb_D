@@ -128,6 +128,32 @@ tr:nth-child(even) td{
   color: #2d3b2d;
 }
 
+.schedule {
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.schedule td, .schedule th {
+  text-align: center;
+  width: 48px;
+  height: 48px;
+}
+
+.date {
+  cursor: pointer;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  font-weight: 400;
+}
+
+.date:hover {
+  background-color: #8fbc8f;
+  color: #1a2a1a;
+}
+
 #purchaseForm {
   display: none;
   margin-top: 24px;

@@ -83,6 +83,11 @@ function greeting(h) {
 
 greeting(hour);
 
+function selectDate(day) {
+    var date = "May " + day + ", 2025";
+    showForm(date);
+}
+
 function showForm(date) {
     document.getElementById("purchaseForm").style.display = "block";
     document.getElementById("selectedDate").value = date;
