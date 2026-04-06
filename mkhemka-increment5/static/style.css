@@ -217,6 +217,13 @@ form * {
   text-align: center;
 }
 
+iframe {
+  width: 560px;
+  height: 315px;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
 @media only screen and (max-width: 650px) {
   .container {
     display: grid;
