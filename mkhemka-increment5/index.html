@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Natural History">
+    <meta name="description" content="American Museum of Natural History website redesign project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/style.css">
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js" defer></script>
+    <script src="./static/script.js" defer></script>
+
+    <title>American Museum of Natural History</title>
+
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="./static/logo.png" alt="American Museum of Natural History Logo">
+        </header>
+        <nav class="nav_bar">
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/buytickets.html">Tickets</a>
+        </nav>
+        <main class="main">
+            <h2 id="greeting">Welcome to the American Museum of Natural History</h2>
+            <p>
+                The American Museum of Natural History (AMNH), located on the Upper West Side
+                of Manhattan, is one of the world's premier natural history institutions.
+                Founded in 1869, the museum spans 21 interconnected buildings with 45 permanent
+                exhibition halls, housing around 32 million specimens and attracting approximately
+                five million visitors each year. Highlights include a 122-foot Titanosaur
+                cast, a T. rex fossil on display since 1915, and an iconic 94-foot blue whale
+                model. In 2023, the museum expanded with the Richard Gilder Center for Science, Education,
+                and Innovation, adding an insectarium, immersive experiences, and expansive collections
+                displays.
+            </p>
+            <a class="cta" href="views/buytickets.html"> Buy Tickets </a>
+            <p id="shortIntro">
+                From the depths of the ocean to the far edges of the universe, the American Museum of Natural History brings the wonders of the natural world to life. Walk among towering dinosaur skeletons, marvel at glittering gems and minerals, and come face to face with creatures from every corner of the Earth, all under one roof in the heart of New York City.
+            </p>
+            <p id="longIntro">
+                The museum offers a wide range of ways to experience science and nature up close. Families can explore the hands-on Discovery Room, catch a show at the Hayden Planetarium, or wander through the Davis Family Butterfly Vivarium where hundreds of live butterflies fly freely overhead. For those who want to go deeper, the museum hosts after-hours programs, guided tours led by expert educators, and special events throughout the year. Members enjoy early access, free admission to ticketed exhibitions, and exclusive programming.
+            </p>
+            <span id="readMore">Read More</span>
+            <span id="readLess">Read Less</span>
+        </main>
+        <figure class="main_figure">
+            <img src="./static/entranceimage.png" alt="American Museum of Natural History Entrance">
+        </figure>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
