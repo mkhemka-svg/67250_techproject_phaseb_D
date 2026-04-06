@@ -115,7 +115,7 @@ nav a:hover {
 }
 
 img[src*="entranceimage"] {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 12px 0;
   border-radius: 12px;
