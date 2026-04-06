@@ -13,8 +13,10 @@
 
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
     <script src="https://code.jquery.com/jquery-4.0.0.js" defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
     <script src="../static/script.js" defer></script>
 
     <title>American Museum of Natural History</title>
@@ -48,7 +50,9 @@
                 <li>2019: The groundbreaking T. rex: The Ultimate Predator exhibition opened, offering visitors a jaw-dropping deep dive into the life and science behind the world's most iconic dinosaur.</li>
             </ul>
         </main>
-        <figure class="main_figure"></figure>
+        <figure class="main_figure">
+            <div id="map"></div>
+        </figure>
         <footer class="footer">
             <p id="copyYear"></p>
         </footer>

@@ -212,3 +212,13 @@ function addYear() {
     year.innerHTML = "© " + currentYear + " American Museum of Natural History. All rights reserved."
 
 }
+
+if (window.location.href.includes("explore.html")) {
+    var map = L.map('map').setView([40.7813, -73.9740], 15);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([40.7813, -73.9740]).addTo(map);
+}

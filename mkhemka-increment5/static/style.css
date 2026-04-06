@@ -224,6 +224,11 @@ iframe {
   margin-top: 16px;
 }
 
+#map {
+  height: 50vh;
+  width: 50vw;
+}
+
 @media only screen and (max-width: 650px) {
   .container {
     display: grid;
