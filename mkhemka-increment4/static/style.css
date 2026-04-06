@@ -33,13 +33,23 @@ nav a:hover {
 }
 
 .cta {
-  background-color: #f8f5ff;
-  color: #a47dab;
+  background-color: #ffcfdf;
+  color: #5a3060;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 12px 24px;
   border: none;
   border-radius: 12px;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+img[src*="entranceimage"] {
+  width: 40%;
+  display: block;
+  margin: 12px 0;
+  border-radius: 12px;
 }
 
 footer {
