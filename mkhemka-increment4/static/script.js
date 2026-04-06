@@ -83,6 +83,11 @@ function greeting(h) {
 
 greeting(hour);
 
+function showForm(date) {
+    document.getElementById("purchaseForm").style.display = "block";
+    document.getElementById("selectedDate").value = date;
+}
+
 // When the "Read Less" button is clicked
 $("#readLess").click(function() {
     $("#longIntro").hide(); // Hide the long introduction text

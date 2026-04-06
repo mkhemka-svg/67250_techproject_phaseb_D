@@ -128,6 +128,25 @@ tr:nth-child(even) td{
   color: #2d3b2d;
 }
 
+#purchaseForm {
+  display: none;
+  margin-top: 24px;
+}
+
+.buy-btn {
+  background-color: #8fbc8f;
+  color: #1a2a1a;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: #c2b280;
+}
+
 form * {
   margin: auto;
   text-align: center;
