@@ -78,6 +78,27 @@ nav a:hover {
   margin-top: 12px;
 }
 
+#longIntro {
+  display: none;
+}
+
+#readLess {
+  display: none;
+}
+
+#readMore, #readLess {
+  cursor: pointer;
+  color: #8fbc8f;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+#readLess {
+  display: none;
+}
+
 img[src*="entranceimage"] {
   width: 40%;
   display: block;
