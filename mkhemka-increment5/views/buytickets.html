@@ -86,10 +86,17 @@
                     <label for="ticketType">Ticket Type *</label>
                     <select id="ticketType" name="ticketType" required onchange="calculatePrice()">
                         <option value="">-- Select --</option>
-                        <option value="Adult">Adult ($18)</option>
-                        <option value="Teen">Teen ($12)</option>
-                        <option value="Senior">Senior ($14)</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Teen">Teen</option>
+                        <option value="Under 3">Under 3</option>
+                        <option value="Senior">Senior</option>
                     </select>
+                </div>
+
+                <div class="row">
+                    <label>Membership *</label>
+                    <label><input type="radio" name="membership" value="member" onclick="calculatePrice()"> Member</label>
+                    <label><input type="radio" name="membership" value="non-member" onclick="calculatePrice()" checked> Non-Member</label>
                 </div>
 
                 <label for="quantity">Quantity (1–10) *</label>

@@ -98,11 +98,19 @@ function selectDate(day) {
     dateInput.value = year + "-" + month + "-" + day;
 }
 
+var ticketPrices = {
+    "Adult":   { "member": 12, "non-member": 18 },
+    "Teen":    { "member": 8,  "non-member": 12 },
+    "Under 3": { "member": 0,  "non-member": 0  },
+    "Senior":  { "member": 10, "non-member": 14 }
+};
+
 function calculatePrice() {
     var qty = parseInt(document.getElementById("quantity").value) || 1;
     var type = document.getElementById("ticketType").value;
-    var prices = { "Adult": 18, "Teen": 12, "Senior": 14 };
-    var rate = prices[type] || 18;
+    var membershipEl = document.querySelector('input[name="membership"]:checked');
+    var membership = membershipEl ? membershipEl.value : "non-member";
+    var rate = (ticketPrices[type] && ticketPrices[type][membership] !== undefined) ? ticketPrices[type][membership] : 0;
     document.getElementById("totalPrice").textContent = qty * rate;
 }
 
@@ -131,8 +139,10 @@ function placeOrder() {
     }
 
     errorDiv.innerHTML = "";
-    var prices = { "Adult": 18, "Teen": 12, "Senior": 14 };
-    var total = qty * (prices[ticketType] || 18);
+    var membershipEl = document.querySelector('input[name="membership"]:checked');
+    var membership = membershipEl ? membershipEl.value : "non-member";
+    var rate = (ticketPrices[ticketType] && ticketPrices[ticketType][membership] !== undefined) ? ticketPrices[ticketType][membership] : 0;
+    var total = qty * rate;
     var mailing = document.getElementById("mailingList").checked ? "Yes" : "No";
 
     alert(
