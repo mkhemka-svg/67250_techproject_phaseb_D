@@ -1,3 +1,28 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+}
+
+.header {
+   grid-area: header;
+}
+.nav_bar {
+   grid-area: nav_bar;
+}
+.main {
+  grid-area: main;
+}
+.main_img {
+   grid-area: main-img;
+}
+.footer {
+   grid-area: footer;
+}
+
 * {
   padding: 5px;
   margin: 5px;
