@@ -98,8 +98,55 @@ function selectDate(day) {
     dateInput.value = year + "-" + month + "-" + day;
 }
 
-function checkout() {
-    alert("Redirecting to ticket purchase...");
+function calculatePrice() {
+    var qty = parseInt(document.getElementById("quantity").value) || 1;
+    document.getElementById("totalPrice").textContent = qty * 18;
+}
+
+function placeOrder() {
+    var errors = [];
+
+    var date = document.getElementById("visitDate").value;
+    var ticketType = document.getElementById("ticketType").value;
+    var qty = parseInt(document.getElementById("quantity").value);
+    var email = document.getElementById("email").value.trim();
+    var zip = document.getElementById("zipcode").value.trim();
+
+    if (!date) errors.push("Visit date is required.");
+    if (!ticketType) errors.push("Ticket type is required.");
+    if (!qty || qty < 1 || qty > 10) errors.push("Quantity must be between 1 and 10.");
+
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) {
+        errors.push("Email is required.");
+    } else if (!emailRegex.test(email)) {
+        errors.push("Please enter a valid email address.");
+    }
+
+    if (zip && !/^\d{5}$/.test(zip)) {
+        errors.push("Zip code must be exactly 5 digits.");
+    }
+
+    var errorDiv = document.getElementById("form-errors");
+    if (errors.length > 0) {
+        errorDiv.innerHTML = errors.map(function(e) { return '<p class="form-error">' + e + '</p>'; }).join("");
+        return;
+    }
+
+    errorDiv.innerHTML = "";
+    var total = qty * 18;
+    var mailing = document.getElementById("mailingList").checked ? "Yes" : "No";
+
+    alert(
+        "Order Confirmed!\n\n" +
+        "Visit Date: " + date + "\n" +
+        "Ticket Type: " + ticketType + "\n" +
+        "Quantity: " + qty + "\n" +
+        "Total Cost: $" + total + "\n" +
+        "Email: " + email + "\n" +
+        "Mailing List: " + mailing + "\n\n" +
+        "Thank you for your purchase!"
+    );
     location.reload();
 }
 
