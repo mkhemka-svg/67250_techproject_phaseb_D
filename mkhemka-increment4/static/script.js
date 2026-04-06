@@ -83,6 +83,17 @@ function greeting(h) {
 
 greeting(hour);
 
+function ActiveNav() {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        if (window.location.href === link.href) {
+            link.classList.add("active");
+        }
+    });
+}
+
+ActiveNav();
+
 function addYear() {
     var year = document.getElementById("copyYear");
     var currentYear = new Date().getFullYear();
