@@ -12,7 +12,8 @@
 }
 .nav_bar {
    grid-area: nav_bar;
-   
+   display: flex;
+   justify-content: center;
 }
 .main {
   grid-area: main;
