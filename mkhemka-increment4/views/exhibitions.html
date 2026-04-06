@@ -6,57 +6,55 @@
     <meta name="author" content="Your name">
     <meta name="keywords" content="Museum, Natural History">
     <meta name="description" content="American Museum of Natural History website redesign project">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="../static/style.css">
-    
+
     <script src="../static/script.js" defer></script>
 
     <title>American Museum of Natural History</title>
 
 </head>
 <body onload="addYear()">
-    <header>
-        <nav> 
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/logo.png" alt="American Museum of Natural History Logo">
+        </header>
+        <nav class="nav_bar">
             <a href="../index.html">Home</a>
             <a href="explore.html">Explore</a>
             <a id="navselected" href="exhibitions.html">Exhibitions</a>
             <a href="tickets.html">Tickets</a>
             <a href="checkout.html">Checkout</a>
-
         </nav>
-    </header>
-    <img id="logo" src="../static/logo.png" alt="American Museum of Natural History Logo">
-    
-    <div class="main">
-        <h3> Exhibition 1: Impact: The End of the Age of Dinosaurs </h3>
-        <p>
-            This exhibition presents a vivid before and after look at the asteroid impact that changed life on Earth 66 million years ago. Through stunning fossil specimens, immersive environments, and cutting-edge scientific research, visitors can explore what thrived in the age of dinosaurs, what was lost in the catastrophic impact, and how the survivors gave rise to the world we know today.
-        </p>
-        
-        <h3> Exhibition 2: Invisible Worlds </h3>
-        <p>
-            Invisible Worlds invites visitors into a breathtaking 360-degree immersive experience that reveals the hidden systems connecting all life on Earth. From microscopic networks within a single cell to vast ecosystems spanning the globe, this exhibition uses stunning visuals and interactive displays to transform the way we see and understand the living world around us.
-        </p>
+        <main class="main">
+            <h3> Exhibition 1: Impact: The End of the Age of Dinosaurs </h3>
+            <p>
+                This exhibition presents a vivid before and after look at the asteroid impact that changed life on Earth 66 million years ago. Through stunning fossil specimens, immersive environments, and cutting-edge scientific research, visitors can explore what thrived in the age of dinosaurs, what was lost in the catastrophic impact, and how the survivors gave rise to the world we know today.
+            </p>
 
-        <h3> Exhibition 3: Eyes on the Universe</h3>
-        <p>
-            Eyes on the Universe takes visitors on a stunning visual journey to the far reaches of space. Featuring breathtaking images captured by the Hubble Space Telescope and the James Webb Space Telescope, this exhibition showcases the extraordinary beauty and complexity of distant galaxies, nebulae, and cosmic phenomena, revealing a universe far more vast and wondrous than we ever imagined.
-        </p>
+            <h3> Exhibition 2: Invisible Worlds </h3>
+            <p>
+                Invisible Worlds invites visitors into a breathtaking 360-degree immersive experience that reveals the hidden systems connecting all life on Earth. From microscopic networks within a single cell to vast ecosystems spanning the globe, this exhibition uses stunning visuals and interactive displays to transform the way we see and understand the living world around us.
+            </p>
 
-        <h3> Exhibition 4: Extinct and Endangered</h3>
-        <p>
-            Extinct and Endangered confronts visitors with the fragile beauty of the insect world through extraordinary macro photography by artist Levon Biss. Using specimens from the Museum's own scientific collections, this exhibition captures vulnerable and extinct insect species in breathtaking detail, shining a light on the biodiversity crisis and the urgent need to protect the creatures that sustain life on Earth.
-        </p>
+            <h3> Exhibition 3: Eyes on the Universe</h3>
+            <p>
+                Eyes on the Universe takes visitors on a stunning visual journey to the far reaches of space. Featuring breathtaking images captured by the Hubble Space Telescope and the James Webb Space Telescope, this exhibition showcases the extraordinary beauty and complexity of distant galaxies, nebulae, and cosmic phenomena, revealing a universe far more vast and wondrous than we ever imagined.
+            </p>
 
+            <h3> Exhibition 4: Extinct and Endangered</h3>
+            <p>
+                Extinct and Endangered confronts visitors with the fragile beauty of the insect world through extraordinary macro photography by artist Levon Biss. Using specimens from the Museum's own scientific collections, this exhibition captures vulnerable and extinct insect species in breathtaking detail, shining a light on the biodiversity crisis and the urgent need to protect the creatures that sustain life on Earth.
+            </p>
+        </main>
+        <figure class="main_figure"></figure>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
     </div>
-
-    <footer>
-        <p id="copyYear"></p>
-    </footer>
-
 </body>
 </html>

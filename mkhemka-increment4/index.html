@@ -6,11 +6,11 @@
     <meta name="author" content="Your name">
     <meta name="keywords" content="Museum, Natural History">
     <meta name="description" content="American Museum of Natural History website redesign project">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./static/style.css">
 
     <script src="./static/script.js" defer></script>
@@ -19,43 +19,38 @@
 
 </head>
 <body onload="addYear()">
-    <header>
-        <nav> 
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="./static/logo.png" alt="American Museum of Natural History Logo">
+        </header>
+        <nav class="nav_bar">
             <a id="navselected" href="index.html">Home</a>
             <a href="views/explore.html">Explore</a>
             <a href="views/exhibitions.html">Exhibitions</a>
             <a href="views/tickets.html">Tickets</a>
             <a href="views/checkout.html">Checkout</a>
         </nav>
-    </header>
-
-    <img id="logo" src="./static/logo.png" alt="American Museum of Natural History Logo">
-
-    <div class="main">
-        <h2 id="greeting">Welcome to the American Museum of Natural History</h2>
-        <p>
-            The American Museum of Natural History (AMNH), located on the Upper West Side 
-            of Manhattan, is one of the world's premier natural history institutions. 
-            Founded in 1869, the museum spans 21 interconnected buildings with 45 permanent 
-            exhibition halls, housing around 32 million specimens and attracting approximately 
-            five million visitors each year. Highlights include a 122-foot Titanosaur 
-            cast, a T. rex fossil on display since 1915, and an iconic 94-foot blue whale 
-            model. In 2023, the museum expanded with the Richard Gilder Center for Science, Education, 
-            and Innovation, adding an insectarium, immersive experiences, and expansive collections 
-            displays.
-
-        </p>
-
-        <a class = "cta" href="views/tickets.html"> Buy Tickets </a>
-
-        <img src="./static/entranceimage.png" alt="American Museum of Natural History Entrance">
-
-        
+        <main class="main">
+            <h2 id="greeting">Welcome to the American Museum of Natural History</h2>
+            <p>
+                The American Museum of Natural History (AMNH), located on the Upper West Side
+                of Manhattan, is one of the world's premier natural history institutions.
+                Founded in 1869, the museum spans 21 interconnected buildings with 45 permanent
+                exhibition halls, housing around 32 million specimens and attracting approximately
+                five million visitors each year. Highlights include a 122-foot Titanosaur
+                cast, a T. rex fossil on display since 1915, and an iconic 94-foot blue whale
+                model. In 2023, the museum expanded with the Richard Gilder Center for Science, Education,
+                and Innovation, adding an insectarium, immersive experiences, and expansive collections
+                displays.
+            </p>
+            <a class="cta" href="views/tickets.html"> Buy Tickets </a>
+        </main>
+        <figure class="main_figure">
+            <img src="./static/entranceimage.png" alt="American Museum of Natural History Entrance">
+        </figure>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
     </div>
-
-    <footer>
-        <p id="copyYear"></p>
-    </footer>
-
 </body>
 </html>
