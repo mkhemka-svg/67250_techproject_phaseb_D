@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Natural History">
+    <meta name="description" content="American Museum of Natural History website redesign project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="../static/script.js" defer></script>
+
+    <title>American Museum of Natural History</title>
+
+</head>
+<body onload="addYear()">
+    <div class="container tickets">
+        <header class="header">
+            <img id="logo" src="../static/logo.png" alt="American Museum of Natural History Logo">
+        </header>
+        <nav class="nav_bar" id="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="exhibitions.html">Exhibitions</a></li>
+                <li><a href="buytickets.html">Tickets</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="ResponsiveNavBar()">
+                    <i class="fa fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <table class="schedule" id="scheduleTable"></table>
+        </main>
+        <aside class="aside">
+            <table class="prices">
+                <tr>
+                    <th colspan="3">Ticket Prices</th>
+                </tr>
+                <tr>
+                    <th>Age Group</th>
+                    <th>Members</th>
+                    <th>Non-Members</th>
+                </tr>
+                <tr>
+                    <td>Adults</td>
+                    <td>$12</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Teens</td>
+                    <td>$8</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>Under 3</td>
+                    <td>Free</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Senior</td>
+                    <td>$10</td>
+                    <td>$14</td>
+                </tr>
+            </table>
+        </aside>
+        <section class="section">
+            <form id="ticket-form">
+                <label for="visitDate">Visit Date</label>
+                <input type="date" id="visitDate" name="visitDate" required>
+                <div class="row">
+                    <h4>Select Ticket Quantities</h4>
+                </div>
+                <div class="row">
+                    <label>Adults</label>
+                    <input type="number" name="adults" min="0" max="10" value="0">
+                </div>
+                <div class="row">
+                    <label>Teens</label>
+                    <input type="number" name="teens" min="0" max="10" value="0">
+                </div>
+                <div class="row">
+                    <label>Seniors</label>
+                    <input type="number" name="seniors" min="0" max="10" value="0">
+                </div>
+                <div class="row">
+                    <h4>Membership Status</h4>
+                </div>
+                <div class="row">
+                    <label>
+                        <input type="radio" name="membership" value="member" required>
+                        Member
+                    </label>
+                    <label>
+                        <input type="radio" name="membership" value="non-member">
+                        Non-Member
+                    </label>
+                </div>
+                <div class="row">
+                    <button onclick="checkout()" id="Checkout" type="button">Checkout</button>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

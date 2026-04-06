@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Natural History">
+    <meta name="description" content="American Museum of Natural History website redesign project">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js" defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="../static/script.js" defer></script>
+
+    <title>American Museum of Natural History</title>
+
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/logo.png" alt="American Museum of Natural History Logo">
+        </header>
+        <nav class="nav_bar" id="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="exhibitions.html">Exhibitions</a></li>
+                <li><a href="buytickets.html">Tickets</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="ResponsiveNavBar()">
+                    <i class="fa fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <h2> Mission Statement </h2>
+            <p>
+                The American Museum of Natural History is dedicated to discovering, interpreting, and sharing scientific knowledge about the natural world and the universe. Our mission is to inspire curiosity across all ages by showcasing groundbreaking research, immersive exhibitions, and collections that connect people to the history of life on Earth and beyond.
+            </p>
+
+            <h2> Milestones </h2>
+            <ul>
+                <li>2023: Opening of the Richard Gilder Center for Science, Education, and Innovation, featuring the Insectarium and Invisible Worlds immersive experience.</li>
+                <li>2022: The Northwest Coast Hall reopened with a reimagined design celebrating the creativity, scholarship, and living cultures of Pacific Northwest Indigenous peoples.</li>
+                <li>2019: The groundbreaking T. rex: The Ultimate Predator exhibition opened, offering visitors a jaw-dropping deep dive into the life and science behind the world's most iconic dinosaur.</li>
+            </ul>
+        </main>
+        <figure class="main_figure">
+            <div id="map"></div>
+        </figure>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
