@@ -184,7 +184,7 @@ $("#readMore").click(function() {
 });
 
 function ActiveNav() {
-    const navLinks = document.querySelectorAll('nav a');
+    const navLinks = document.querySelectorAll('nav li a');
     navLinks.forEach(link => {
         if (window.location.href === link.href) {
             link.classList.add("active");
@@ -193,6 +193,18 @@ function ActiveNav() {
 }
 
 ActiveNav();
+
+function ResponsiveNavBar() {
+    console.log("in ResponsiveNavBar");
+    var nav = document.getElementById('navbar');
+    console.log(nav);
+    if (nav.className === "nav_bar") {
+        console.log("nav.className === 'nav_bar'");
+        nav.className += " responsive";
+    } else {
+        nav.className = "nav_bar";
+    }
+}
 
 function addYear() {
     var year = document.getElementById("copyYear");
